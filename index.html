@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#071b15">
+    <meta name="description" content="RootScent turns airborne chemical response patterns into actionable data for buildings, infrastructure, and autonomous systems.">
+    <title>RootScent — Chemical intelligence for the physical world</title>
+    <link rel="icon" href="./assets/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" href="./assets/favicon.png">
+    <link rel="apple-touch-icon" href="./assets/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js" defer></script>
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="RootScent — Chemical intelligence for the physical world">
+    <meta property="og:description" content="We are building the data layer that helps machines understand airborne chemistry.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/gagangowda858-afk/RootScent-website/main/assets/og-image.png">
+    <meta property="og:image:alt" content="RootScent tree-and-circuit mark on a forest-green background">
+    <meta name="twitter:card" content="summary_large_image">
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="RootScent home">
+        <img src="./assets/rootscent-logo.webp" width="36" height="34" alt="">
+        <span>ROOTSCENT</span>
+      </a>
+      <nav id="primary-nav" aria-label="Primary navigation" data-nav>
+        <a href="#product">Product</a>
+        <a href="#traction">Progress</a>
+        <a href="#why-now">Why now</a>
+        <a href="#team">Team</a>
+      </nav>
+      <button class="menu-toggle" type="button" aria-controls="primary-nav" aria-expanded="false" data-menu-toggle>
+        <span></span><span></span><span></span><b>Menu</b>
+      </button>
+      <a class="header-cta" href="mailto:gagangowda858@gmail.com?subject=RootScent%20conversation">Talk to us <span>↗</span></a>
+    </header>
+
+    <main id="main-content">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero__glow" aria-hidden="true"></div>
+        <div class="hero__content">
+          <p class="status"><span></span> Working prototype · Now building pilot hardware</p>
+          <h1 id="hero-title">We teach machines<br><em>to smell.</em></h1>
+          <p class="hero__lede">RootScent is building the chemical intelligence layer for the physical world—turning patterns in the air into structured data that buildings, robots, and infrastructure can understand.</p>
+          <div class="hero__actions">
+            <a class="button button--light" href="#traction">See the prototype <span>↓</span></a>
+            <a class="button button--ghost" href="mailto:gagangowda858@gmail.com?subject=RootScent%20pilot">Explore a pilot <span>↗</span></a>
+          </div>
+        </div>
+
+        <div class="sensor-card" aria-label="Illustrative RootScent sensor output">
+          <div class="sensor-card__top"><span>ROOTSCENT / NODE 01</span><span class="online"><i></i> ONLINE</span></div>
+          <div class="sensor-card__signal" aria-hidden="true">
+            <svg viewBox="0 0 560 190" role="img">
+              <defs><linearGradient id="signal-fill" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#a9f59d" stop-opacity=".32"/><stop offset="1" stop-color="#a9f59d" stop-opacity="0"/></linearGradient></defs>
+              <path class="grid-line" d="M0 30H560M0 80H560M0 130H560M0 180H560"/>
+              <path class="signal-fill" d="M0 145 C35 140 38 110 66 117 S105 165 138 130 S165 67 198 91 S223 163 261 139 S294 39 327 62 S358 154 391 124 S423 82 454 98 S494 143 560 82 V190 H0Z"/>
+              <path class="signal-line" d="M0 145 C35 140 38 110 66 117 S105 165 138 130 S165 67 198 91 S223 163 261 139 S294 39 327 62 S358 154 391 124 S423 82 454 98 S494 143 560 82"/>
+            </svg>
+          </div>
+          <div class="sensor-card__prototype">
+            <div>
+              <span>PHYSICAL NODE</span>
+              <strong>BME690 + ESP32</strong>
+              <small>Current working prototype</small>
+            </div>
+            <img src="./assets/prototype-bme690-esp32.webp" width="442" height="147" alt="" fetchpriority="high">
+          </div>
+          <div class="sensor-card__readings">
+            <div><span>EVENT</span><strong>Mixed gas</strong></div>
+            <div><span>CONFIDENCE</span><strong>Model output</strong></div>
+            <div><span>PRODUCT</span><strong>Scent vector</strong></div>
+          </div>
+          <p class="sensor-card__note">Illustrative interface based on current prototype outputs.</p>
+        </div>
+
+        <div class="hero__foot"><p>Airborne chemistry is a data layer the physical world is missing.</p><span>Scroll to understand the system</span></div>
+      </section>
+
+      <section class="proof-strip" aria-label="Current progress">
+        <p>Built, not just imagined</p>
+        <ul><li><strong>01</strong> working hardware prototype</li><li><strong>04</strong> tested gas states</li><li><strong>01</strong> end-to-end ML pipeline</li></ul>
+      </section>
+
+      <section class="section problem" aria-labelledby="problem-title">
+        <div class="section-label">01 / THE GAP</div>
+        <div class="section-intro">
+          <h2 id="problem-title">The world is instrumented for sight and sound.<br><span>Not chemistry.</span></h2>
+          <p>Most gas detection is still built around one sensor, one known gas, and one fixed threshold. That model can alert after a target reaches a limit; it does not create a reusable understanding of how chemical events begin, combine, and move.</p>
+        </div>
+        <div class="comparison" aria-label="Comparison of conventional detection and RootScent">
+          <div class="comparison__labels"><span>Conventional detector</span><span>RootScent platform</span></div>
+          <div class="comparison__row"><span>Single target</span><strong>→</strong><span>Multi-sensor patterns</span></div>
+          <div class="comparison__row"><span>Fixed threshold</span><strong>→</strong><span>Classification + anomaly score</span></div>
+          <div class="comparison__row"><span>Isolated alarm</span><strong>→</strong><span>Shareable chemical-event data</span></div>
+          <div class="comparison__row"><span>Static device</span><strong>→</strong><span>Fleet learning over time</span></div>
+        </div>
+      </section>
+
+      <section class="section product" id="product" aria-labelledby="product-title">
+        <div class="section-label">02 / THE PRODUCT</div>
+        <div class="section-intro section-intro--light">
+          <h2 id="product-title">Sense. Learn.<br><span>Understand.</span></h2>
+          <p>A controlled sensor node captures multidimensional responses to volatile compounds. Our machine-learning pipeline turns those response curves into chemical-event classifications, concentration estimates, anomaly scores, and spatial patterns.</p>
+        </div>
+        <div class="product-steps">
+          <article><span>01</span><div class="step-icon" aria-hidden="true">⌁</div><h3>Sense</h3><p>MOS and FET sensor arrays capture changes in airborne chemistry under controlled sampling conditions.</p></article>
+          <article><span>02</span><div class="step-icon" aria-hidden="true">◇</div><h3>Learn</h3><p>Signal processing, environmental correction, device normalization, and ML extract a stable chemical fingerprint.</p></article>
+          <article><span>03</span><div class="step-icon" aria-hidden="true">◎</div><h3>Understand</h3><p>Operators and systems receive structured outputs they can compare, map, and act on.</p></article>
+        </div>
+        <figure class="pipeline-figure">
+          <img src="./assets/chemical-event-pipeline.webp" width="1417" height="522" loading="lazy" alt="RootScent pipeline from sensors through machine learning to predictions and a chemical-event map">
+          <figcaption>From raw sensor response to a portable chemical-event data layer.</figcaption>
+        </figure>
+      </section>
+
+      <section class="section traction" id="traction" aria-labelledby="traction-title">
+        <div class="section-label">03 / PROGRESS</div>
+        <div class="section-intro">
+          <h2 id="traction-title">Already sensing<br><span>the invisible.</span></h2>
+          <p>We built a physical prototype and the complete data path around it. Early tests captured distinct butane, methane, mixed-gas, and clean-air states—not a simulation, but live response data from real hardware.</p>
+        </div>
+        <div class="prototype-showcase">
+          <figure class="prototype-photo"><div class="figure-tag">PHYSICAL PROTOTYPE / BME690 + ESP32</div><img src="./assets/prototype-bme690-esp32.webp" width="442" height="147" loading="lazy" alt="RootScent prototype with an ESP32 and BME690 sensor connected on a breadboard"></figure>
+          <div class="prototype-copy"><p class="kicker">What works today</p><ul><li>Live odor-response data collection</li><li>Clean-air, butane, and methane signatures</li><li>Mixed butane + methane state detection</li><li>Scent-vector, confidence, and anomaly outputs</li><li>Early PPM-estimation pipeline</li></ul></div>
+        </div>
+        <figure class="output-figure">
+          <div class="figure-tag">EARLY MODEL OUTPUT</div>
+          <img src="./assets/prototype-output.webp" width="748" height="271" loading="lazy" alt="Early RootScent output showing clean-air, butane, methane, and mixed-gas predictions and model outputs">
+          <figcaption>Early output examples across four tested states. Results have not yet been independently validated in a controlled laboratory study.</figcaption>
+        </figure>
+      </section>
+
+      <section class="section wedge" aria-labelledby="wedge-title">
+        <div class="section-label">04 / GO-TO-MARKET</div>
+        <div class="section-intro section-intro--light">
+          <h2 id="wedge-title">Start where late detection is expensive.</h2>
+          <p>Our initial wedge is continuous chemical anomaly detection in high-value environments. Each deployment delivers immediate monitoring value while generating the real-world drift, interference, and mixture data needed to improve the network.</p>
+        </div>
+        <div class="wedge-grid">
+          <article><span>FIRST</span><h3>Buildings & HVAC</h3><p>Continuous context for indoor-air and equipment anomalies.</p></article>
+          <article><span>THEN</span><h3>Batteries & industry</h3><p>Persistent monitoring around storage, manufacturing, and critical equipment.</p></article>
+          <article><span>SCALE</span><h3>Infrastructure & autonomy</h3><p>Distributed chemical awareness for facilities, robots, and connected systems.</p></article>
+        </div>
+        <div class="moat-line"><p>The node creates distribution.</p><p>The dataset creates the moat.</p></div>
+      </section>
+
+      <section class="section architecture" aria-labelledby="architecture-title">
+        <div class="section-label">05 / ARCHITECTURE</div>
+        <div class="section-intro">
+          <h2 id="architecture-title">Hardware designed around the data.</h2>
+          <p>Independent airflow, thermal isolation, environmental sensing, and temperature cycling make the physical system part of the model—not just an enclosure around it.</p>
+        </div>
+        <div class="architecture-grid">
+          <figure><img src="./assets/dual-chamber-architecture.webp" width="795" height="451" loading="lazy" alt="Dual-chamber RootScent architecture with MOS and FET sensors, separate airflow, environmental sensors, and thermal isolation"></figure>
+          <ul><li><span>01</span>MOS + FET arrays provide complementary response data</li><li><span>02</span>Separate airflow supports distinct sampling conditions</li><li><span>03</span>Temperature and humidity become model inputs</li><li><span>04</span>Edge processing enables rapid local inference</li><li><span>05</span>Connected nodes support fleet learning</li></ul>
+        </div>
+      </section>
+
+      <section class="section why-now" id="why-now" aria-labelledby="why-now-title">
+        <div class="section-label">06 / WHY NOW</div>
+        <div class="section-intro section-intro--light">
+          <h2 id="why-now-title">The pieces finally<br><span>fit together.</span></h2>
+          <p>Affordable sensor arrays can produce richer signals. Edge compute can process them locally. Modern machine learning can separate patterns that fixed thresholds miss. RootScent brings those pieces into one system.</p>
+        </div>
+        <div class="why-grid">
+          <article>
+            <span>01 / SENSORS</span>
+            <h3>Richer signal</h3>
+            <p>Multiple sensing technologies and temperature cycles create a multidimensional chemical response.</p>
+          </article>
+          <article>
+            <span>02 / COMPUTE</span>
+            <h3>Edge inference</h3>
+            <p>Local processing supports rapid anomaly detection without waiting for every sample to reach the cloud.</p>
+          </article>
+          <article>
+            <span>03 / NETWORK</span>
+            <h3>Fleet learning</h3>
+            <p>Connected deployments can turn isolated signals into an improving chemical-event dataset.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section team" id="team" aria-labelledby="team-title">
+        <div class="section-label">07 / TEAM</div>
+        <div class="section-intro section-intro--light">
+          <h2 id="team-title">A technical founding team built around the problem.</h2>
+          <p>RootScent brings together engineering, physics, chemistry, and mathematics to build both sides of the system: the hardware that produces reliable signals and the intelligence that makes them useful.</p>
+        </div>
+        <div class="founders">
+          <article class="founder"><img src="./assets/gagan-gowda.webp" width="267" height="207" loading="lazy" alt="Portrait of RootScent co-founder Gagan Gowda"><div><span>01 / CO-FOUNDER</span><h3>Gagan Gowda</h3><p>Industrial Engineering + Physics<br>Purdue University</p></div></article>
+          <article class="founder"><img src="./assets/srinivas-prasad.webp" width="266" height="207" loading="lazy" alt="Portrait of RootScent co-founder Srinivas Prasad"><div><span>02 / CO-FOUNDER</span><h3>Srinivas Prasad</h3><p>Chemistry + Mathematics<br>Emory University</p></div></article>
+          <article class="founder founder--initials"><div class="initials" aria-hidden="true"><span>AK</span></div><div><span>03 / CO-FOUNDER</span><h3>Abdullayev Karim</h3><p>Co-founder</p></div></article>
+        </div>
+      </section>
+
+      <section class="closing" aria-labelledby="closing-title">
+        <img class="closing__mark" src="./assets/rootscent-logo.webp" width="275" height="260" loading="lazy" alt="">
+        <div>
+          <p class="section-label">ROOTSCENT / 2026</p>
+          <h2 id="closing-title">Cameras gave machines sight.<br><span>We are giving them smell.</span></h2>
+          <p>We are looking for pilot partners, technical collaborators, and people who believe chemistry should be computable.</p>
+          <a class="button button--light" href="mailto:gagangowda858@gmail.com?subject=RootScent%20conversation">Start a conversation <span>↗</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a class="brand" href="#top"><img src="./assets/rootscent-logo.webp" width="32" height="30" alt=""><span>ROOTSCENT</span></a>
+      <p>Chemical intelligence for the physical world.</p>
+      <a href="mailto:gagangowda858@gmail.com">gagangowda858@gmail.com</a>
+    </footer>
+  </body>
+</html>
