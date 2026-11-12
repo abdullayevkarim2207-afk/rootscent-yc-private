@@ -1,6 +1,6 @@
 # RootScent Market Analysis
 
-**Prepared by:** Karim Abdullayev, Co-Founder, Business & Operations  
+**Prepared by:** Karim Abdullayev, Business & Operations  
 **Updated:** November 12, 2026
 
 ## Market overview
